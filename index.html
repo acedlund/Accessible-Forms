@@ -32,22 +32,22 @@
 			<form action="https://wp.zybooks.com/form-viewer.php" method="POST">
 
 				<label for="fullName">Full Name<span class="required">*</span></label>
-				<input type="text" name="fullName" id="fullName" required>
+				<input type="text" name="fullName" id="fullName" required autocomplete="name">
 
 				<label for="email">Email<span class="required">*</span></label>
-				<input type="email" name="email" id="email" required>
+				<input type="email" name="email" id="email" required autocomplete="email">
 
 				<label for="phone">Phone Number<span class="required">*</span>
-				<br><small>Format: 123-456-7890</small></label>
-				<input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+				</label>
+				<input type="tel" name="phone" id="phone"  required autocomplete="tel-national">
 
 				<fieldset>
-					<legend>Preferred Contact Method</legend>
+					<legend>Preferred Contact Method<span class="required">*</span></legend>
 
-					<input type="radio" name="contactPref" id="emailPref" checked>
+					<input type="radio" name="contactPref" id="emailPref" checked required>
 					<label for="emailPref">Email</label>
 
-					<input type="radio" name="contactPref" id="phonePref">
+					<input type="radio" name="contactPref" id="phonePref" required>
 					<label for="phonePref">Phone</label>
 
 				</fieldset>
